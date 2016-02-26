@@ -207,7 +207,7 @@ public:
     /// Is there support for GL_KHR_debug?
     bool debugSupport() const { return fDebugSupport; }
 
-    /// Is there support for ES2 compatability?
+    /// Is there support for ES2 compatibility?
     bool ES2CompatibilitySupport() const { return fES2CompatibilitySupport; }
 
     /// Can we call glDisable(GL_MULTISAMPLE)?

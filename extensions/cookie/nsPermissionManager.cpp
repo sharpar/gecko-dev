@@ -953,7 +953,7 @@ nsPermissionManager::InitDB(bool aRemoveFile)
     // In version 5, host appId, and isInBrowserElement were merged into a
     // single origin entry
     //
-    // In version 6, the tables were renamed for backwards compatability reasons
+    // In version 6, the tables were renamed for backwards compatibility reasons
     // with version 4 and earlier.
     //
     // In version 7, a bug in the migration used for version 4->5 was discovered
@@ -1042,7 +1042,7 @@ nsPermissionManager::InitDB(bool aRemoveFile)
     // we already have a moz_perms, as we need a re-migration due to bug 1186034).
     //
     // After this migration, we are guaranteed to have both a moz_hosts (for backwards
-    // compatability), and a moz_perms table. The moz_hosts table will have a v4 schema,
+    // compatibility), and a moz_perms table. The moz_hosts table will have a v4 schema,
     // and the moz_perms table will have a v6 schema.
     case 4:
     case 6:
@@ -1134,7 +1134,7 @@ nsPermissionManager::InitDB(bool aRemoveFile)
           }
 
           // We don't drop the moz_hosts table such that it is avaliable for
-          // backwards-compatability and for future migrations in case of
+          // backwards-compatibility and for future migrations in case of
           // migration errors in the current code.
           // Create a marker empty table which will indicate that the moz_hosts
           // table is intended to act as a backup. If this table is not present,
@@ -1446,7 +1446,7 @@ nsPermissionManager::CreateTable()
     ")"));
   if (NS_FAILED(rv)) return rv;
 
-  // We also create a legacy V4 table, for backwards compatability,
+  // We also create a legacy V4 table, for backwards compatibility,
   // and to ensure that downgrades don't trigger a schema version change.
   return mDBConn->ExecuteSimpleSQL(NS_LITERAL_CSTRING(
     "CREATE TABLE moz_hosts ("

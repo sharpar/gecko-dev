@@ -904,7 +904,7 @@ var Input = {
     this.editState = aEditState;
   },
 
-  // XXX: This is here for backwards compatability with screen reader simulator
+  // XXX: This is here for backwards compatibility with screen reader simulator
   // it should be removed when the extension is updated on amo.
   scroll: function scroll(aPage, aHorizontal) {
     this.sendScrollMessage(aPage, aHorizontal);

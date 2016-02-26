@@ -1052,7 +1052,7 @@ nsFilePicker::ShowW(int16_t *aReturnVal)
   // Launch the XP file/folder picker on XP and as a fallback on Vista+. 
   // The CoCreateInstance call to CLSID_FileOpenDialog fails with "(0x80040111)
   // ClassFactory cannot supply requested class" when the checkbox for
-  // Disable Visual Themes is on in the compatability tab within the shortcut
+  // Disable Visual Themes is on in the compatibility tab within the shortcut
   // properties.
   bool result = false, wasInitError = true;
   if (mMode == modeGetFolder) {
