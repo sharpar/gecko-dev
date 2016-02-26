@@ -1,0 +1,22 @@
+From f3c21ac335826bfb368bb04536a4f51e987feb83 Mon Sep 17 00:00:00 2001
+From: shivain <shivain27@gmail.com>
+Date: Thu, 25 Feb 2016 23:30:32 -0500
+Subject: security file patch
+
+
+diff --git a/security/nss/lib/dbm/include/hash.h b/security/nss/lib/dbm/include/hash.h
+index 20307b5..8c17313 100644
+--- a/security/nss/lib/dbm/include/hash.h
++++ b/security/nss/lib/dbm/include/hash.h
+@@ -115,7 +115,7 @@ typedef struct htab	 {		/* Memory resident data structure */
+ 	int		cbucket;	/* Current bucket */
+ 	int		cndx;		/* Index of next item on cpage */
+ 	int		dbmerrno;		/* Error Number -- for DBM 
+-					 * compatability */
++					 * compatibility */
+ 	int		new_file;	/* Indicates if fd is backing store 
+ 					 * or no */
+ 	int		save_file;	/* Indicates whether we need to flush 
+-- 
+1.9.1
+
