@@ -577,7 +577,7 @@ class PrecompiledHeader(object):
   def GetObjDependencies(self, sources, objs):
     """Given a list of sources files and the corresponding object files,
     returns a list of the pch files that should be depended upon. The
-    additional wrapping in the return value is for interface compatability
+    additional wrapping in the return value is for interface compatibility
     with make.py on Mac, and xcode_emulation.py."""
     if not self._PchHeader():
       return []
