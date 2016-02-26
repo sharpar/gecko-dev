@@ -57,7 +57,7 @@ typedef struct PR_fd_set {
 ** INPUTS:
 **   PRInt32 num             
 **       This argument is unused but is provided for select(unix) interface
-**       compatability.  All input PR_fd_set arguments are self-describing
+**       compatibility.  All input PR_fd_set arguments are self-describing
 **       with its own maximum number of elements in the set.
 **                               
 **   PR_fd_set *readfds
