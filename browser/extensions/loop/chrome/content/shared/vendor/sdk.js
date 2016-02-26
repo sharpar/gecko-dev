@@ -8114,13 +8114,13 @@ OTPlugin.initPeerConnection = function initPeerConnection(iceServers,
   }
 };
 
-// A RTCSessionDescription like object exposed for native WebRTC compatability
+// A RTCSessionDescription like object exposed for native WebRTC compatibility
 OTPlugin.RTCSessionDescription = function RTCSessionDescription(options) {
   this.type = options.type;
   this.sdp = options.sdp;
 };
 
-// A RTCIceCandidate like object exposed for native WebRTC compatability
+// A RTCIceCandidate like object exposed for native WebRTC compatibility
 OTPlugin.RTCIceCandidate = function RTCIceCandidate(options) {
   this.sdpMid = options.sdpMid;
   this.sdpMLineIndex = parseInt(options.sdpMLineIndex, 10);

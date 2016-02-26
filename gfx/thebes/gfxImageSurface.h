@@ -115,7 +115,7 @@ public:
 
     /**
      * Fast copy from a source surface; returns TRUE if successful, FALSE otherwise
-     * Assumes that the format of this surface is compatable with aSurface
+     * Assumes that the format of this surface is compatible with aSurface
      */
     bool CopyFrom (mozilla::gfx::SourceSurface *aSurface);
 

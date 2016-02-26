@@ -35,7 +35,7 @@ kittens = true # This test requires kittens
 
         # compare this to ConfigParser
         # python 2.7 ConfigParser does not support '#' as an
-        # inline comment delimeter (for "backwards compatability"):
+        # inline comment delimeter (for "backwards compatibility"):
         # http://docs.python.org/2/library/configparser.html
         buffer.seek(0)
         parser = ConfigParser()

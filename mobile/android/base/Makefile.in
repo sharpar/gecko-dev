@@ -45,7 +45,7 @@ GARBAGE_DIRS += classes db jars res sync services generated
 # The bootclasspath is functionally identical to the classpath, but allows the
 # classes given to redefine classes in core packages, such as java.lang.
 # android.jar is here as it provides Android's definition of the Java Standard
-# Library. The compatability lib here tweaks a few of the core classes to paint
+# Library. The compatibility lib here tweaks a few of the core classes to paint
 # over changes in behaviour between versions.
 JAVA_BOOTCLASSPATH := \
     $(ANDROID_SDK)/android.jar \

@@ -1308,7 +1308,7 @@ public:
 //
 // We're going to pretend that there are spaces where they make sense.
 //
-// (draft-06 is not backward compatabile and draft-07 replaced sctpmap's with
+// (draft-06 is not backward compatible and draft-07 replaced sctpmap's with
 // fmtp maps - we should carefully choose when to upgrade)
 class SdpSctpmapAttributeList : public SdpAttribute
 {
